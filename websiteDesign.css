@@ -72,7 +72,7 @@ html body{
 	color: #fed136;
 }
 #header{
-	height:700px;
+	height:900px;
 	background: url(images/background.jpg) ;
 	background-size: 100%;
 	color: #fff;
@@ -86,7 +86,7 @@ html body{
     opacity: 0.4;
     z-index: 1;
     width: 100%;
-    height: 700px;
+    height: 900px;
 }
 #header .header-content {
 	position: absolute;
