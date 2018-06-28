@@ -76,6 +76,9 @@ html body{
 	background: url(images/background.jpg) ;
 	background-size: 100%;
 	color: #fff;
+	background-size: cover;
+    background-position: center;
+    position: relative;
 }
 #header:after {
     position: absolute;
