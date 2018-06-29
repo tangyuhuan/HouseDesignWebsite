@@ -72,13 +72,15 @@ html body{
 	color: #fed136;
 }
 #header{
-	height:900px;
-	background: url(images/background.jpg) ;
-	background-size: 100%;
+	border:1px solid red;
+	height:800px;
+	width:100%;
+	/*background: url(images/background.jpg) ;*/
 	color: #fff;
-	background-size: cover;
-    background-position: center;
+/*	background-size: cover;
+    background-position: center;*/
     position: relative;
+    overflow: hidden;
 }
 #header:after {
     position: absolute;
@@ -89,7 +91,7 @@ html body{
     opacity: 0.4;
     z-index: 1;
     width: 100%;
-    height: 900px;
+    height: 800px;
 }
 #header .header-content {
 	position: absolute;
@@ -312,7 +314,7 @@ textarea {
 	font-size: 16px;
 	padding-top: 20px;
 	padding-left: 10px;
-	float:right;
+	float: right;
 }
 #contact h2 {
 	font-size: 40px;
@@ -358,4 +360,69 @@ textarea {
 }
 #footer a:hover {
 	text-decoration: underline;
+}
+/*轮播图*/
+
+.carousel ul,
+.carousel li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.carousel .img-ct {
+	/*overflow: hidden;*/
+	position: absolute;
+
+}
+.carousel .img-ct>li {
+	float: left;
+	height: 800px;
+	width:1500px;
+}
+.carousel .img-ct .img1{
+	background: url(images/background.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+.carousel .img-ct .img2{
+	background: url(images/background1_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.carousel .img-ct .img3{
+	background: url(images/background1_3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.carousel .img-ct .img4{
+	background: url(images/background1_4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.carousel .img-ct>li img{
+	height: 800px;
+	width:100%;
+}
+
+.carousel .bullet {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -100px;
+	width: 250px;
+	height: 20px;
+	text-align: center;
+}
+.carousel .bullet>li {
+	display: inline-block;
+	width: 40px;
+	height: 10px;
+	border: 3px solid #ccc;
+	border-radius: 4px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+.carousel .bullet>li.active{
+	background: #ccc;
 }
