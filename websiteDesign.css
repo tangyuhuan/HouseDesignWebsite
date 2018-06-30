@@ -8,74 +8,65 @@
 }
 .iconfont {
   font-family:"iconfont" !important;
-  font-size:50px;
+  font-size:0.7rem;
   font-style:normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin:3px;
 }
-.icon-size{
-  font-size:100px;
-}
+
 * {
 	padding:0;
 	margin:0;
 }
 html body{
-
 	text-align: center;
 	font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;	
 }
-.layout {
-	width:1170px;
-	margin:0 auto;
-}
+
 #navbar{
 	position: fixed;
 	top: 0;
 	z-index: 3;
-	height: 84px;
+	height: 0.6rem;
 	width: 100%;
 	background: #000;
 	opacity: 0.8;
+/*	display: flex;
+	flex-direction: row;
+	justify-content: space-between;*/
 }
-#navbar:after {
-	content: "";
-	display: block;
-	clear: both;
-}
+
 #navbar a {
 	text-decoration: none;
 	color: #fff;
 }
 #navbar .logo {
-	text-align: left;
-	margin:10px 50px;
-}
-#navbar .logo a{
+	float:left;
+	margin-left: 0.1rem;
 	color: #fed136;
-	font-size: 40px;
+	font-size: 0.25rem;
+	line-height: 0.6rem;
 	font-family: cursive;
 	font-weight: bolder;
 }
 #navbar ul {
-	margin-right: 50px;
+	float:right;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 #navbar ul li {
-	float:right;
 	list-style: none;
-	line-height: 84px;
-	padding: 0 10px;
-	font-size: 18px;
+	line-height: 0.6rem;
+	font-size: 0.2rem;
+	margin-right:0.1rem;
 }
 #navbar ul li a:hover {
 	color: #fed136;
 }
 #header{
-/* 	border:1px solid red; */
-	height:800px;
+	height:6rem;
 	width:100%;
-	/*background: url(images/background.jpg) ;*/
 	color: #fff;
 /*	background-size: cover;
     background-position: center;*/
@@ -91,9 +82,10 @@ html body{
     opacity: 0.4;
     z-index: 1;
     width: 100%;
-    height: 800px;
+    height: 6rem;
 }
 #header .header-content {
+	width: 8rem;
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -102,14 +94,14 @@ html body{
 	text-align: center;
 }
 #header .header-content h2 {
-	font-size: 30px;
+	font-size: 0.3rem;
 	font-family: sans-serif,"Droid Serif","Helvetica Neue",Helvetica,Arial;
-	margin-bottom: 10px;
+	margin-bottom: 0.2rem;
 }
 #header .header-content h1 {
-	font-size: 55px;
+	font-size: 0.5rem;
 	font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial;
-
+	margin: 0;
 }
 #header .header-content button,
 #contact button {
@@ -118,24 +110,29 @@ html body{
     border-color: #fed136;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-transform: uppercase;
-    font-weight: 700;
-    border-radius: 10px;
-    font-size: 18px;
-    padding: 20px 40px;
-    margin-top: 30px;
+    font-weight: 500;
+    border-radius: 0.1rem;
+    font-size: 0.2rem;
+    padding: 0.15rem 0.25rem;
     outline: none;
 }
-#services {
-	margin-bottom: 120px;
+#services{
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+}
+#services .layout, #team .layout{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
 }
 #services h2,
 #cases h2,
 #process h2,
-#team h2 {
-	font-size: 40px;
+#team h2,
+#contact h2 {
+	font-size: 0.4rem;
 	color: #333;
 	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	margin-top: 120px;
 }
 #services>p,
 #cases>p,
@@ -143,93 +140,104 @@ html body{
 #team>p,
 #contact>p {
 	color: #777;
-	font-size: 20px;
-	margin: 10px 0 50px;
+	font-size: 0.3rem;
+	margin-top: 0.2rem;
 }
 #services .service-choose {
-	display: inline-block;
-	width:30%;
+	margin-top: 0.2rem;
+	width:3rem;
 }
 #services .service-choose h4,
 #process .step li .summary h4,
 #team .team-member h4 {
-	font-size: 18px;
+	font-size: 0.25rem;
 	color: #333;
-	margin:10px;
+	margin:0.01rem;
 }
 #services .service-choose p,
 #process .step li .summary p,
 #team .team-member p {
-	font-size: 14px;
+	font-size: 0.2rem;
 	color: #777;
-	line-height: 1.5;
+
 }
 #cases {
 	overflow: hidden;
 	background: #F6F6F7;
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
 }
+
 #cases .cases-preview {
-	float: left;
-	margin: 20px;
-	height:320px;
+	margin: 0.1rem;
+	height: 2.5rem;
+	width: 3rem;
 	background-color: #fff;
-	border-radius: 10px;
+	border-radius: 0.05rem;
 	position: relative;
 }
 #cases .cases-preview img{
-	width: 350px;
-	height:250px;
-	border-radius: 10px 10px 0 0;
+	width: 3rem;
+	height: 2rem;
+	border-radius: 0.05rem 0.05rem 0 0;
 }
-#cases .cases-preview .cases-layer::before {
-  
-}
+
 #cases .cases-preview .cases-layer{
-  	 width: 350px;
-     height:250px;
+  	 width: 3rem;
+     height: 2rem;
      background-color: #fed136;
-     border-radius: 10px 10px 0 0;
+     border-radius: 0.05rem 0.05rem 0 0;
      opacity: 0;
      position:absolute;
      top:0;
      left:0;
 }
 #cases .cases-preview .cases-layer-top {
-	font-size: 150px;
+	font-size: 1.5rem;
 	color:#fff;
 	font-weight: bolder;
 	vertical-align: top;
-	 opacity: 0;
-	 position:absolute;
-     top: 20px;
-     left: 130px;
-     z-index: 6;
+	opacity: 0;
+    position: absolute;
+	left: 50%;
+	top: 35%;
+	transform: translate(-50%,-50%);	
+	text-align: center;
+	z-index: 6;
 }
+
 #cases .cases-preview:hover .cases-layer{
 	opacity: 0.5;
 }
 #cases .cases-preview:hover .cases-layer-top {
 	opacity: 1;
 }
+
 #cases .cases-preview h4 {
-	line-height: 60px;
 	color: #333;
-	font-size: 18px;
+	font-size: 0.2rem;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	line-height: 0.2rem;
 }
-#cases .layout:after {
-	content: "";
-	display: block;
-	clear: both;
-	margin-bottom: 110px;
+#cases .layout{
+	margin-top: 0.6rem;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+#process{
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
 }
 #process .step {
-
-margin-bottom: 125px;
+	margin-top: 1rem;
 }
 #process .step li {
 	list-style: none;
 	position: relative;
-	padding:0 0 125px 0;
+	padding:0 0 0.7rem 0;
 }
 #process .step li:last-child{
 	padding-bottom: 0;
@@ -237,34 +245,34 @@ margin-bottom: 125px;
 #process .step li:nth-child(odd) .summary{
 	position: absolute;
 	right: 50%;
-	top: 20px;
-	margin-right: 130px;
-	width: 25em;
+	top: -0.3rem;
+	margin-right: 1.4rem;
+	width: 3rem;
 	text-align: right;
 }
 #process .step li:nth-child(even) .summary{
 	position: absolute;
 	left: 50%;
-	top: 20px;
-	margin-left: 130px;
-	width: 25em;
+	top: -0.3rem;
+	margin-left: 1.4rem;
+	width: 3rem;
 	text-align: left;	
 }
 #process .step li img {
-	width: 180px;
-	height: 180px;
+	width: 1.8rem;
+	height: 1.8rem;
 	border-radius: 50%;
-	border: 8px #F0F1F1 solid;	
+	border: 0.08rem #F0F1F1 solid;	
 }
 #process .step li button {
-	width: 180px;
-	height: 180px;
+	width: 2rem;
+	height: 2rem;
 	border-radius: 50%;
-	border: 8px #F0F1F1 solid;
+	border: 0.08rem #F0F1F1 solid;
 	background-color: #fed136;
 	color: #fff;
-	font-size: 23px;
-	font-weight: bolder;
+	font-weight: 500;
+	font-size: 0.4rem;
 	outline: none;
 }
 #process .step li:after {
@@ -278,83 +286,89 @@ margin-bottom: 125px;
 	z-index: -1;
 }
 #team {
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
 	overflow: hidden;
 	background: #F6F6F7;
+	margin-bottom: 0.5rem;
 }
 #team .team-member {
-	display: inline-block;
-	padding: 0 60px;
-	margin-bottom: 120px;
+	margin-top: 0.5rem;
+	width: 3rem;
 }
 #team .team-member img{
-	width: 220px;
-	height: 220px;
+	width: 1.5rem;
+	height: 1.5rem;
 	border-radius: 50%;
-	border: 8px #fff solid;
-
+	border: 0.08rem #fff solid;
 }
-#team .team-member p:after {
-    content:"";
-    display:block;
-    padding:5px;
+#team .team-member .iconList{
+	height:1rem;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+#team .team-member .iconfont{
+	font-size: 0.4rem;
+	margin:0 0.1rem;
 }
 input[type="text"] {
-	width: 545px;
-	height: 55px;
-	margin: 10px;
-	border-radius: 5px;
-	font-size: 16px;
-	padding-left: 10px;
+	margin-left: 0.1rem;
+	margin-right: 0.1rem;
+	width: 4rem;
+	height: 0.4rem;
+	border-radius: 0.05rem;
+	font-size: 0.2rem;
 }
 textarea {
-	width: 545px;
-	height: 195px;
-	margin: 10px;
-	border-radius: 5px;
-	font-size: 16px;
-	padding-top: 20px;
-	padding-left: 10px;
-	float: right;
+	width: 4rem;
+	height: 1.6rem;
+	border-radius: 0.05rem;
+	font-size: 0.2rem;
+	margin-right: 0.1rem;
 }
 #contact h2 {
-	font-size: 40px;
 	color: #fff;
-	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	margin-top: 120px;
 }
 #contact {
 	overflow: hidden;
 	background: url(images/background2.gif);
-  background-size: 100%;
+  	background-size: 100%;
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+}
+#contact .layout{
+	margin: 0.1rem auto 0;
+	width:8.4rem;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	height:1.8rem;
 }
 
-#contact .input-text {
-	float: left;
-}
-
-#contact .layout:after {
-	content: "";
-	display: block;
-	clear: both;
-	margin-bottom: 125px;
-}
 #footer {
-	height: 80px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	font-size: 0.2rem;
+	align-items:center;
 }
+/*@media (min-width: ){
+	
+}*/
 #footer span {
-	display: inline-block;
-	line-height: 80px;
-	float:left;
-	margin-left: 50px;
+	flex:1;
 }
-#footer i {
-	line-height: 80px;
+#footer .iconfonts{
+	flex:1;
+}
+#footer .link{
+	flex:1;
+}
+#footer .iconfonts .iconfont {
+	font-size: 0.3rem;
 }
 #footer a{
-	display: inline-block;
-	line-height: 80px;
-	float: right;
-	margin-right: 50px;
 	color: #fed136;
 	text-decoration: none;
 }
@@ -376,8 +390,8 @@ textarea {
 }
 .carousel .img-ct>li {
 	float: left;
-	height: 800px;
-	width:1500px;
+	height:6rem;
+	width:10rem;
 }
 .carousel .img-ct .img1{
 	background: url(images/background.jpg) ;
@@ -399,28 +413,25 @@ textarea {
     background-size: cover;
     background-position: center;
 }
-.carousel .img-ct>li img{
-	height: 800px;
-	width:100%;
-}
 
 .carousel .bullet {
 	position: absolute;
-	bottom: 20px;
 	left: 50%;
-	margin-left: -100px;
-	width: 250px;
-	height: 20px;
+	top: 95%;
+	transform: translate(-50%,-50%);	
+	width: 3rem;
+	height: 0.2rem;
 	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
+
 .carousel .bullet>li {
-	display: inline-block;
-	width: 40px;
-	height: 10px;
+	width: 0.4rem;
+	height: 0.1rem;
 	border: 3px solid #ccc;
 	border-radius: 4px;
-	margin-right: 5px;
-	margin-bottom: 5px;
 	cursor: pointer;
 }
 .carousel .bullet>li.active{

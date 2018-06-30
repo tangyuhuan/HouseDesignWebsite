@@ -1,3 +1,9 @@
+var width=document.documentElement.clientWidth;
+var styleStr='html{font-size:'+width/10+'px;}';
+var style=document.createElement('style');
+style.innerHTML=styleStr;
+document.head.appendChild(style);
+
 var $imgCt = $('.img-ct')
 var $imgs = $('.carousel .img-ct>li')
 var $imgw = $('.carousel .img-ct>li img')
