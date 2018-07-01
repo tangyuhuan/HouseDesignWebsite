@@ -143,6 +143,7 @@ html body{
 	font-size: 0.3rem;
 	margin-top: 0.2rem;
 }
+
 #services .service-choose {
 	margin-top: 0.2rem;
 	width:3rem;
@@ -160,6 +161,12 @@ html body{
 	font-size: 0.2rem;
 	color: #777;
 
+}
+@media (max-width: 420px) {
+	#services .service-choose {
+		margin-top: 0.2rem;
+		width:4rem;
+	}
 }
 #cases {
 	overflow: hidden;
@@ -227,6 +234,61 @@ html body{
 	flex-flow: row wrap;
 	justify-content: center;
 }
+@media  (max-width: 420px) {
+	#cases .cases-preview {
+		margin: 0.2rem;
+		height: 3.5rem;
+		width: 4rem;
+		background-color: #fff;
+		border-radius: 0.2rem;
+		position: relative;
+	}
+	#cases .cases-preview img{
+		width: 4rem;
+		height: 3rem;
+		border-radius: 0.2rem 0.2rem 0 0;
+	}
+
+	#cases .cases-preview .cases-layer{
+	  	 width: 4rem;
+	     height: 3rem;
+	     background-color: #fed136;
+	     border-radius: 0.2rem 0.2rem 0 0;
+	     opacity: 0;
+	     position:absolute;
+	     top:0;
+	     left:0;
+	}
+	#cases .cases-preview .cases-layer-top {
+		font-size: 2rem;
+		color:#fff;
+		font-weight: bolder;
+		vertical-align: top;
+		opacity: 0;
+	    position: absolute;
+		left: 50%;
+		top: 35%;
+		transform: translate(-50%,-50%);	
+		text-align: center;
+		z-index: 6;
+	}
+
+	#cases .cases-preview:hover .cases-layer{
+		opacity: 0.5;
+	}
+	#cases .cases-preview:hover .cases-layer-top {
+		opacity: 1;
+	}
+
+	#cases .cases-preview h4 {
+		color: #333;
+		font-size: 0.3rem;
+		font-weight: 400;
+		padding: 0;
+		margin: 0;
+		line-height: 0.3rem;
+	}
+}
 #process{
 	padding-top: 0.8rem;
 	padding-bottom: 0.8rem;
@@ -287,10 +349,9 @@ html body{
 }
 #team {
 	padding-top: 0.8rem;
-	padding-bottom: 0.8rem;
+	padding-bottom: 0.6rem;
 	overflow: hidden;
 	background: #F6F6F7;
-	margin-bottom: 0.5rem;
 }
 #team .team-member {
 	margin-top: 0.5rem;
@@ -311,6 +372,28 @@ html body{
 #team .team-member .iconfont{
 	font-size: 0.4rem;
 	margin:0 0.1rem;
+}
+@media (max-width: 420px) {
+	#team .team-member {
+		margin-top: 0.5rem;
+		width: 4.5rem;
+	}
+	#team .team-member img{
+		width: 2rem;
+		height: 2rem;
+		border-radius: 50%;
+		border: 0.1rem #fff solid;
+	}
+	#team .team-member .iconList{
+		height:1.2rem;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+	}
+	#team .team-member .iconfont{
+		font-size: 0.5rem;
+		margin:0 0.1rem;
+	}
 }
 input[type="text"] {
 	margin-left: 0.1rem;
@@ -345,6 +428,41 @@ textarea {
 	justify-content: space-around;
 	height:1.8rem;
 }
+@media  (max-width: 420px) {
+	input[type="text"] {
+		width: 6rem;
+		height: 0.6rem;
+		border-radius: 0.1rem;
+		font-size: 0.3rem;
+		margin:0.1rem;
+		border:none;
+	}
+	textarea {
+		margin:0.1rem;
+		width: 6rem;
+		height: 1.5rem;
+		border-radius: 0.1rem;
+		font-size: 0.3rem;
+	}
+	#contact h2 {
+		color: #fff;
+	}
+	#contact {
+		overflow: hidden;
+		background: url(images/background2.gif);
+	  	background-size: 100%;
+		padding-top: 0.8rem;
+		padding-bottom: 0.8rem;
+	}
+	#contact .layout{
+		margin: 0.1rem auto 0;
+		widows: 8rem;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		height:4rem;
+	}	
+}
 
 #footer {
 	display: flex;
@@ -353,9 +471,6 @@ textarea {
 	font-size: 0.2rem;
 	align-items:center;
 }
-/*@media (min-width: ){
-	
-}*/
 #footer span {
 	flex:1;
 }
@@ -371,9 +486,16 @@ textarea {
 #footer a{
 	color: #fed136;
 	text-decoration: none;
+	margin-right: 0.2rem;
 }
 #footer a:hover {
 	text-decoration: underline;
+}
+@media (max-width: 420px) {
+	#footer .iconfonts .iconfont {
+		font-size: 0.5rem;
+	}
+
 }
 /*轮播图*/
 
