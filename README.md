@@ -4,4 +4,5 @@
 - 使用媒体查询实现对pc、手机端的响应式
 - flex弹性布局
 - 使用jquery自制滚动轮播组件
-[相关blog](https://www.jianshu.com/p/850401948c77)
+
+[关于响应式&自适应布局的基本介绍请移步blog](https://www.jianshu.com/p/850401948c77)
